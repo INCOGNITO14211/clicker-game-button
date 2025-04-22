@@ -4,7 +4,7 @@ extends Node2D
 var prestige_points = 0
 var prestige_multiplier = 1
 var prestige_threshold = 10000
-var score = 1000000000000
+var score = 0
 
 # Click power and auto-click rate variables
 var click_power = 1
