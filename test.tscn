@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://eri63b8aplow"]
+[gd_scene load_steps=2 format=3 uid="uid://dmmmxa0ref85m"]
 
-[ext_resource type="Script" uid="uid://bqycq3rcy1pny" path="res://node_2d.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://ceeyvovn8i3vl" path="res://test.gd" id="1_37kl0"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_wtcfe")
+script = ExtResource("1_37kl0")
 
 [node name="Click" type="Button" parent="."]
 offset_left = 429.0
@@ -57,7 +57,6 @@ offset_left = 4.0
 offset_top = 234.0
 offset_right = 282.0
 offset_bottom = 285.0
-theme_override_constants/h_separation = 0
 
 [connection signal="pressed" from="Click" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickPowerButton" to="." method="_on_increase_click_powe_upgrade_pressed"]
