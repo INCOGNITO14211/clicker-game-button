@@ -43,7 +43,16 @@ offset_top = 421.0
 offset_right = 956.0
 offset_bottom = 583.0
 
+[node name="PrestigeButton" type="Button" parent="."]
+offset_left = 426.0
+offset_top = 183.0
+offset_right = 722.0
+offset_bottom = 275.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
 [connection signal="pressed" from="Click" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickPowerButton" to="." method="_on_increase_click_powe_upgrade_pressed"]
 [connection signal="pressed" from="AutoClickerButton" to="." method="_on_auto_clicker_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="PrestigeButton" to="." method="_on_prestige_button_pressed"]
