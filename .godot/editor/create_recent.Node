@@ -1,8 +1,8 @@
+Label
+Timer
 ColorRect
 Button
 Sprite2D
-Label
 GPUParticles2D
 CPUParticles2D
 AnimationPlayer
-Timer

@@ -45,6 +45,12 @@ offset_top = 91.0
 offset_right = 302.0
 offset_bottom = 146.0
 
+[node name="CpsLabel" type="Label" parent="."]
+offset_left = 428.0
+offset_top = 371.0
+offset_right = 728.0
+offset_bottom = 426.0
+
 [node name="ScoreLabel" type="Label" parent="."]
 offset_left = 545.0
 offset_top = 106.0
@@ -56,12 +62,6 @@ metadata/_edit_use_anchors_ = true
 wait_time = 0.5
 autostart = true
 
-[node name="Label" type="Label" parent="."]
-offset_left = 189.0
-offset_top = 421.0
-offset_right = 956.0
-offset_bottom = 583.0
-
 [node name="PrestigeButton" type="Button" parent="."]
 custom_minimum_size = Vector2(300, 55)
 offset_left = 426.0
@@ -70,11 +70,6 @@ offset_right = 726.0
 offset_bottom = 238.0
 text = "Prestige(cost:10,000)"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-show_behind_parent = true
-position = Vector2(576.5, 324.5)
-scale = Vector2(3.64873, 3.26396)
-
 [node name="AutoClickFrequencyButton" type="Button" parent="."]
 offset_left = 4.0
 offset_top = 234.0
@@ -82,9 +77,13 @@ offset_right = 304.0
 offset_bottom = 289.0
 theme_override_constants/h_separation = 0
 
+[node name="CpsTimer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="pressed" from="Click" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickPowerButton" to="." method="_on_increase_click_powe_upgrade_pressed"]
 [connection signal="pressed" from="AutoClickerButton" to="." method="_on_auto_clicker_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="PrestigeButton" to="." method="_on_prestige_button_pressed"]
 [connection signal="pressed" from="AutoClickFrequencyButton" to="." method="_on_auto_click_frequency_button_pressed"]
+[connection signal="timeout" from="CpsTimer" to="." method="_on_cps_timer_timeout"]

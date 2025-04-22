@@ -25,6 +25,10 @@ var auto_click_interval = 1.0   # Starting at 1 second per tick.
 var auto_click_frequency_cost = 50  # Cost to reduce the wait time (i.e. increase frequency).
 var frequency_scaling_factor = 1.3  # Multiply cost by this factor for each upgrade.
 
+# Variables for tracking clicks per second
+var click_count: int = 0  # Number of clicks within the current second
+var cps: int = 0          # Clicks per second (updated every second)
+
 func _ready() -> void:
 	# Assuming you have a Timer node named "Timer" as a child of this Node2D.
 	$Timer.wait_time = auto_click_interval
@@ -32,6 +36,7 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	score += click_power * prestige_multiplier
 	$ScoreLabel.text = str(int(score))
+	click_count += 1
 	update_ui()
 
 func _on_increase_click_powe_upgrade_pressed() -> void:
@@ -81,3 +86,13 @@ func _on_auto_click_frequency_button_pressed() -> void:
 		$Timer.wait_time = auto_click_interval
 		auto_click_frequency_cost *= frequency_scaling_factor
 		update_ui()
+
+func _on_cps_timer_timeout() -> void:
+ # The number of clicks measured in the last second is the CPS.
+	cps = click_count
+
+	# Update the CPS label
+	$CpsLabel.text = "Clicks per second: " + str(cps)
+	
+	# Reset the click count for the next interval
+	click_count = 0
