@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://eri63b8aplow"]
+
+[ext_resource type="Script" uid="uid://bqycq3rcy1pny" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wtcfe")
+
+[node name="Click" type="Button" parent="."]
+offset_left = 429.0
+offset_top = 293.0
+offset_right = 729.0
+offset_bottom = 348.0
+text = "I think you should click me
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="ClickPowerButton" type="Button" parent="."]
+offset_left = 918.0
+offset_top = 102.0
+offset_right = 1144.0
+offset_bottom = 157.0
+
+[node name="AutoClickerButton" type="Button" parent="."]
+offset_left = 11.0
+offset_top = 94.0
+offset_right = 280.0
+offset_bottom = 156.0
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 545.0
+offset_top = 106.0
+offset_right = 585.0
+offset_bottom = 129.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 189.0
+offset_top = 421.0
+offset_right = 956.0
+offset_bottom = 583.0
+
+[connection signal="pressed" from="Click" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ClickPowerButton" to="." method="_on_increase_click_powe_upgrade_pressed"]
+[connection signal="pressed" from="AutoClickerButton" to="." method="_on_auto_clicker_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
