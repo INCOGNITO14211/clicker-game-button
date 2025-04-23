@@ -1,8 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745337177
-cat with glasses.jpg::CompressedTexture2D::9193783850698548926::1745336013::1745337206::1::::<><><>0<>0<>c06a6b909a59d35418c986112a15fc6d<>res://.godot/imported/cat with glasses.jpg-ef895fb4c23a95503ea313fe37efe64f.ctex::
-icon.svg::CompressedTexture2D/CompressedTexture2D::5586469942056897765::1745264616::1745264660::1::::<><><>0<>0<>5c019907fdf1d79493284bef33bfd870<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-node_2d.gd::GDScript::3559138751726526814::1745337090::0::1::::<>Node2D<><>0<>0<><>::
-node_2d.tscn::PackedScene::316392365622909430::1745337090::0::1::::<><><>0<>0<><>::uid://bqycq3rcy1pny::::res://node_2d.gd
-test.gd::GDScript::5063349730855870581::1745335868::0::1::::<>Node2D<><>0<>0<><>::
-test.tscn::PackedScene::8027070424355512916::1745335874::0::1::::<><><>0<>0<><>::uid://ceeyvovn8i3vl::::res://test.gd
+::res://::1745416023
+Confetti.png::CompressedTexture2D::2627690983769335434::1745415366::1745415369::1::::<><><>0<>0<>ddec31aa9c80e02ed98b62dcc449cae9<>res://.godot/imported/Confetti.png-ce8d03103028a239ba470587037be805.ctex::
+maybe bettr crown.jpg::CompressedTexture2D::3992648645456650624::1745416023::1745416023::1::::<><><>0<>0<>6d321472fb79962a256d6865e7a5834d<>res://.godot/imported/maybe bettr crown.jpg-317022d3a2cf10835217ac321a85a8df.ctex::
+node_2d.gd::GDScript::3559138751726526814::1745414393::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::316392365622909430::1745414909::0::1::::<><><>0<>0<><>::uid://bqycq3rcy1pny::::res://node_2d.gd

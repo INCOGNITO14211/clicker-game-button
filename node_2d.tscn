@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://eri63b8aplow"]
+[gd_scene load_steps=3 format=3 uid="uid://eri63b8aplow"]
 
 [ext_resource type="Script" uid="uid://bqycq3rcy1pny" path="res://node_2d.gd" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bw5cls40xh05y" path="res://maybe bettr crown.jpg" id="3_0hol4"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_wtcfe")
@@ -87,7 +88,13 @@ autostart = true
 [node name="CpsTimer" type="Timer" parent="."]
 autostart = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_left = 918.0
+offset_top = 413.0
+offset_right = 1155.0
+offset_bottom = 667.0
+texture = ExtResource("3_0hol4")
 
 [connection signal="pressed" from="Click" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ClickPowerButton" to="." method="_on_increase_click_powe_upgrade_pressed"]

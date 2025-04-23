@@ -1,4 +1,6 @@
+TextureRect
 AnimationPlayer
+AnimatedSprite2D
 Label
 Timer
 ColorRect

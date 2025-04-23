@@ -114,7 +114,7 @@ func check_for_achievements() -> void:
 	# Example: Unlock "First Click" when score is at least 1.
 	if score >= 1 and not achievements[0]["unlocked"]:
 		achievements[0]["unlocked"] = true
-
+	if score >= 10 and not achievements[1]["unlocked"]:
 	# Example: Unlock "Click Streak" for 10 clicks.
 		achievements[1]["unlocked"] = true
 
@@ -131,14 +131,7 @@ func check_for_achievements() -> void:
 		achievements[4]["unlocked"] = true
 	if prestige_multiplier >1 and not achievements[5]["unlocked"]:
 		achievements[5]["unlocked"] = true
-	# Achievement 6: "Good job you 100% my game" — unlocked when achievements 0–4 are all unlocked.
-	var all_other_unlocked = true
-	for i in range(0, 5):
-		if not achievements[i]["unlocked"]:
-			all_other_unlocked = false
-			break
-	if all_other_unlocked and not achievements[5]["unlocked"]:
-		achievements[5]["unlocked"] = true
+		show_achievement_popup()
 	update_achievements_display()
 #achievement displayer
 func update_achievements_display() -> void:
@@ -149,3 +142,7 @@ func update_achievements_display() -> void:
 		else:
 			achievement_display += achievement["name"] + " - Locked\n"
 	$AchievementsLabel.text = achievement_display
+
+func show_achievement_popup() -> void:
+	# Make the popup visible
+	$TextureRect.visible = true
