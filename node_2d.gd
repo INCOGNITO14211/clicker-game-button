@@ -4,7 +4,7 @@ extends Node2D
 var prestige_points = 0
 var prestige_multiplier = 1
 var prestige_threshold = 10000
-var score = 0
+var score = 1000000000
 
 # Click power and auto-click rate variables
 var click_power = 1
@@ -131,6 +131,8 @@ func check_for_achievements() -> void:
 		achievements[4]["unlocked"] = true
 	if prestige_multiplier >1 and not achievements[5]["unlocked"]:
 		achievements[5]["unlocked"] = true
+	if achievements and not achievements[6]["unlocked"]:
+		achievements[6] ["unlocked"] = true
 		show_achievement_popup()
 	update_achievements_display()
 #achievement displayer
@@ -142,7 +144,7 @@ func update_achievements_display() -> void:
 		else:
 			achievement_display += achievement["name"] + " - Locked\n"
 	$AchievementsLabel.text = achievement_display
-
+#showing achievements
 func show_achievement_popup() -> void:
 	# Make the popup visible
 	$TextureRect.visible = true

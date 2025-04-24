@@ -1,6 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745416023
-Confetti.png::CompressedTexture2D::2627690983769335434::1745415366::1745415369::1::::<><><>0<>0<>ddec31aa9c80e02ed98b62dcc449cae9<>res://.godot/imported/Confetti.png-ce8d03103028a239ba470587037be805.ctex::
-maybe bettr crown.jpg::CompressedTexture2D::3992648645456650624::1745416023::1745416023::1::::<><><>0<>0<>6d321472fb79962a256d6865e7a5834d<>res://.godot/imported/maybe bettr crown.jpg-317022d3a2cf10835217ac321a85a8df.ctex::
-node_2d.gd::GDScript::3559138751726526814::1745414393::0::1::::<>Node2D<><>0<>0<><>::
-node_2d.tscn::PackedScene::316392365622909430::1745414909::0::1::::<><><>0<>0<><>::uid://bqycq3rcy1pny::::res://node_2d.gd
+::res://::1745428800
+maybe bettr crown.jpg::CompressedTexture2D/CompressedTexture2D::3992648645456650624::1745416023::1745416023::1::::<><><>0<>0<>6d321472fb79962a256d6865e7a5834d<>res://.godot/imported/maybe bettr crown.jpg-317022d3a2cf10835217ac321a85a8df.ctex::
+node_2d.gd::GDScript/GDScript::3559138751726526814::1745416983::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene/PackedScene::316392365622909430::1745417480::0::1::::<><><>0<>0<><>::uid://bqycq3rcy1pny::::res://node_2d.gd<>uid://bw5cls40xh05y::::res://maybe bettr crown.jpg
